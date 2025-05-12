@@ -4,12 +4,11 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import styled from "styled-components";
 import Login from "./pages/Login.jsx";
 import SignUp from "./pages/SignUp.jsx";
+import Home from "./pages/Home.jsx";
 
 
 function App() {
   
-
-
   return (
     <UserContext.Provider>
       <BrowserRouter>
@@ -17,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Login/>}/>
             <Route path="/sign-up" element={<SignUp/>}/>
+            <Route path="/home" element={<Home/>}/>
           </Routes>
         </AppStyle>
       </BrowserRouter>
