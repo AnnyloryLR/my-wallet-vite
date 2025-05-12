@@ -3,28 +3,30 @@ import styled from "styled-components";
 
 
 
-function Login(){
+function SignUp(){
 
 
     return(
-        <LoginStyle>
+        <SignUpStyle>
            <h1>MyWallet</h1>
            <FormStyle>
-                <InputStyle type="email" placeholder="E-mail"/>
-                <InputStyle type="password" placeholder="Senha"/>
-                <SubmitStyle type="submit"> <p>Entrar</p> </SubmitStyle>
+                <InputStyle type="text" placeholder="Nome"/>
+                <InputStyle type="email" placeholder="e-mail"/>
+                <InputStyle type="password" placeholder="senha"/>
+                <InputStyle type="password" placeholder="Confirme a senha"/>
+                <SubmitStyle type="submit"> <p>Cadastrar</p> </SubmitStyle>
            </FormStyle>
-           <p>Primeira vez? Cadastre-se!</p>
+           <p>Já tem uma conta? Faça login!</p>
 
 
-        </LoginStyle>
+        </SignUpStyle>
     )
 
 }
 
-export default Login;
+export default SignUp;
 
-const LoginStyle = styled.div`
+const SignUpStyle = styled.div`
     width:100vw;
     height:100vh;
     background-color: #8C11BE;
@@ -86,7 +88,7 @@ const SubmitStyle = styled.button`
     align-items:center;
     justify-content:center;
     margin-top:13px;
-    margin-bottom:36px;
+    margin-bottom:13px;
     background-color:#A328D6;
     border:1px solid #A328D6;
     border-radius:5px;
