@@ -39,12 +39,11 @@ const SignUpStyle = styled.div`
     align-items:center;
     
     h1{
-        margin-top:150px;
+        margin-top:100px;
         font-size:32;
         color:#FFFFFF;
         font-family: "Saira Stencil One";
-        font-weight:400;
-        
+        font-weight:400;        
     } 
     p{
         font-family: "Raleway";
@@ -55,12 +54,14 @@ const SignUpStyle = styled.div`
 `
 
 const FormStyle = styled.form`
+    height:60%;
     display:flex;
     flex-wrap:wrap;
     flex-direction:column;
     align-items:center;
-    
+    justify-content:center;    
 `
+
 const InputStyle = styled.input`
     width: 326px;
     height: 58px;

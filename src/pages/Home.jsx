@@ -55,7 +55,7 @@ const HomeStyle = styled.div`
     
 `
 const Top = styled.div`
-    height:75px;
+    height:20%;
     width:90%;
     display: flex;
     justify-content:space-between;
@@ -76,8 +76,8 @@ const Top = styled.div`
 `
 const WhiteBoard = styled.div`
     background-color:#FFFFFF;
-    height:446px;
-    width:326px;
+    height:80%;
+    width:90%;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -93,14 +93,13 @@ const WhiteBoard = styled.div`
     }
 `
 const ButtonDiv = styled.div`
+    height:30%;
     width:90%;
     display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-
+    align-items:center;
 `
 const ButtonLeft = styled.button`
-    width:155px;
+    width:45%;
     height:114px;
     display:flex;
     flex-direction:column;
@@ -108,7 +107,7 @@ const ButtonLeft = styled.button`
     background-color:#A328D6;
     border:1px solid #A328D6;
     border-radius:5px;
-    margin-right:15px;
+    margin-right:10%;
     margin-top:10px;
     padding-bottom:0%;
     p{
@@ -124,7 +123,7 @@ const ButtonLeft = styled.button`
     } 
 `
 const ButtonRight = styled.button`
-    width:155px;
+    width:45%;
     height:114px;
     display:flex;
     flex-direction:column;
@@ -140,10 +139,10 @@ const ButtonRight = styled.button`
         font-size:17px;
         font-weight:700; 
         text-align:right; 
-        margin-left:67px;
+        margin-left:50%;
     }
     svg{
       margin:5px;
-      margin-left:110px;
+      margin-left:80%;
     }     
 `

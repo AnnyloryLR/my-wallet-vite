@@ -35,6 +35,7 @@ const LoginStyle = styled.div`
     top:0;
     left:0; 
     align-items:center;
+    justify-content:center;
     
     h1{
         margin-top:150px;
@@ -53,11 +54,11 @@ const LoginStyle = styled.div`
 `
 
 const FormStyle = styled.form`
+    height:50%;
     display:flex;
     flex-wrap:wrap;
     flex-direction:column;
     align-items:center;
-    
 `
 const InputStyle = styled.input`
     width: 326px;
