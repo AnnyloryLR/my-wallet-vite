@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-function IncomeUpdate(){
+function IncomesUpdate(){
     return (
         <UpdateStyle>
             <Top><h1>Editar entrada</h1></Top>
@@ -14,7 +14,7 @@ function IncomeUpdate(){
     )
 }
 
-export default IncomeUpdate;
+export default IncomesUpdate;
 
 const UpdateStyle = styled.div`
     width:100vw;

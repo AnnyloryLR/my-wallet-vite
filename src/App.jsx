@@ -5,9 +5,9 @@ import styled from "styled-components";
 import Login from "./pages/Login.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import Home from "./pages/Home.jsx";
-import Income from "./pages/Income.jsx";
+import Incomes from "./pages/Incomes.jsx";
 import Expenses from "./pages/Expenses.jsx";
-import IncomeUpdate from "./pages/IncomeUpdate.jsx";
+import IncomesUpdate from "./pages/IncomesUpdate.jsx";
 import ExpensesUpdate from "./pages/ExpensesUpdate.jsx";
 
 
@@ -21,9 +21,9 @@ function App() {
             <Route path="/" element={<Login/>}/>
             <Route path="/sign-up" element={<SignUp/>}/>
             <Route path="/home" element={<Home/>}/>
-            <Route path="/income" element={<Income/>} />
+            <Route path="/incomes" element={<Incomes/>} />
             <Route path="/expenses" element={<Expenses/>}/>
-            <Route path="/income-update" element={<IncomeUpdate/>}/>
+            <Route path="/incomes-update" element={<IncomesUpdate/>}/>
             <Route path="/expenses-update" element={<ExpensesUpdate/>} />
           </Routes>
         </AppStyle>

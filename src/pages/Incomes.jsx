@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
-function Income(){
+function Incomes(){
     return (
-        <IncomeStyle>
+        <IncomesStyle>
             <Top><h1>Nova entrada</h1></Top>
             <FormStyle>
                 <InputStyle type="text" placeholder="Valor"/>
                 <InputStyle type="text" placeholder="Descrição"/>
                 <SubmitStyle type="submit"> <p>Salvar Entrada</p> </SubmitStyle>
             </FormStyle>
-        </IncomeStyle>
+        </IncomesStyle>
         
     )
 }
 
-export default Income;
+export default Incomes;
 
-const IncomeStyle = styled.div`
+const IncomesStyle = styled.div`
     width:100vw;
     height:100vh;
     background-color: #8C11BE;
