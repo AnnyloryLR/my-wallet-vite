@@ -8,6 +8,7 @@ import Home from "./pages/Home.jsx";
 import Income from "./pages/Income.jsx";
 import Expenses from "./pages/Expenses.jsx";
 import IncomeUpdate from "./pages/IncomeUpdate.jsx";
+import ExpensesUpdate from "./pages/ExpensesUpdate.jsx";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/income" element={<Income/>} />
             <Route path="/expenses" element={<Expenses/>}/>
             <Route path="/income-update" element={<IncomeUpdate/>}/>
+            <Route path="/expenses-update" element={<ExpensesUpdate/>} />
           </Routes>
         </AppStyle>
       </BrowserRouter>
