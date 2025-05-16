@@ -12,9 +12,13 @@ import ExpensesUpdate from "./pages/ExpensesUpdate.jsx";
 
 
 function App() {
+
+  const [token, setToken] = useState(localStorage.getItem('token'));
+
+  const [user, setUser] = useState("");
   
   return (
-    <UserContext.Provider>
+    <UserContext.Provider value={{token, setToken, user, setUser}}>
       <BrowserRouter>
         <AppStyle>
           <Routes>
