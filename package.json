@@ -17,6 +17,7 @@
     "react-is": "^19.1.0",
     "react-router": "^7.6.0",
     "react-router-dom": "^7.6.0",
+    "react-spinners": "^0.17.0",
     "styled-components": "^6.1.18"
   },
   "devDependencies": {

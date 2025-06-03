@@ -24,11 +24,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Login/>}/>
             <Route path="/sign-up" element={<SignUp/>}/>
-            <Route path="/home" element={<Home/>}/>
-            <Route path="/incomes" element={<Incomes/>} />
+            <Route path="/transactions" element={<Home/>}/>
+            {/* <Route path="/incomes" element={<Incomes/>} />
             <Route path="/expenses" element={<Expenses/>}/>
             <Route path="/incomes-update" element={<IncomesUpdate/>}/>
-            <Route path="/expenses-update" element={<ExpensesUpdate/>} />
+            <Route path="/expenses-update" element={<ExpensesUpdate/>} /> */}
           </Routes>
         </AppStyle>
       </BrowserRouter>

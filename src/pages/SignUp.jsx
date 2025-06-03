@@ -1,18 +1,37 @@
 import styled from "styled-components";
-import { useState } from "react";
+import { useState, CSSProperties } from "react";
+import { DotLoader } from "react-spinners";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router";
 
-
-
-
 function SignUp(){
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const navigate = useNavigate();
+
+    function register(event){
+        event.preventDefault();
+
+        const userData = {name, email, password}
+
+        axios.post("https://mywallet-api-alr.onrender.com/sign-up", userData)
+        .then( res => {
+            navigate("sign-in")
+        })
+        .catch(err => {
+            alert(err.response.data.message)
+        })
+
+
+    }
 
     return(
         <SignUpStyle>
            <h1>MyWallet</h1>
-           <FormStyle>
+           <FormStyle onSubmit={register}>
                 <InputStyle type="text" placeholder="Nome"/>
                 <InputStyle type="email" placeholder="e-mail"/>
                 <InputStyle type="password" placeholder="senha"/>
