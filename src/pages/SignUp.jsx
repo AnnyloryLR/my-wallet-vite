@@ -19,7 +19,7 @@ function SignUp(){
 
         axios.post("https://mywallet-api-alr.onrender.com/sign-up", userData)
         .then( res => {
-            navigate("sign-in")
+            navigate("/")
         })
         .catch(err => {
             alert(err.response.data.message)
@@ -32,9 +32,9 @@ function SignUp(){
         <SignUpStyle>
            <h1>MyWallet</h1>
            <FormStyle onSubmit={register}>
-                <InputStyle type="text" placeholder="Nome"/>
-                <InputStyle type="email" placeholder="e-mail"/>
-                <InputStyle type="password" placeholder="senha"/>
+                <InputStyle onChange={e => setName(e.target.value)} value={name} type="text" placeholder="Nome"/>
+                <InputStyle onChange={e => setEmail(e.target.value)} value={email} type="email" placeholder="e-mail"/>
+                <InputStyle onChange={e => setPassword(e.target.value)} value={password} type="password" placeholder="senha"/>
                 <InputStyle type="password" placeholder="Confirme a senha"/>
                 <SubmitStyle type="submit"> <p>Cadastrar</p> </SubmitStyle>
            </FormStyle>
